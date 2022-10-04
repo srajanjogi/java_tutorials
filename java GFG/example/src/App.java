@@ -1,10 +1,13 @@
 
 import java.util.Scanner;
+
+import javax.lang.model.util.ElementScanner14;
 public class App {
     public static void main(String[] args)  {
         int no;
         int sum;
-        int s;
+        int s=0;
+        int y;
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number of intiger:");
         no=sc.nextInt();
@@ -17,16 +20,18 @@ public class App {
         System.out.println("enter the sum");
         sum=sc.nextInt();
         for(int i=0;i<no;i++){
-        x=i+1;
-        j=i;
-        while (s < sum)
+        int x=i+1;
+        int j=i;
+        while(s < sum)
         {
-            s=s+a[j];
+            s=s+array[j];
             j++;
             if(s==sum)
-            y=j+1;
+           y=j+1;
         }
-printf("The position for thr sum is"+ x +"and"+ y )
-
-    }
+System.out.println("The position for thr sum is"+ x +"and"+ y );
 }
+}
+}
+
+
